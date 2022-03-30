@@ -26,4 +26,3 @@ def test_search_images(browser):
     images_page.go_to_first_category()
     images_page.go_to_first_image()
     images_page.go_to_next_and_previous_image()
-    time.sleep(10)
