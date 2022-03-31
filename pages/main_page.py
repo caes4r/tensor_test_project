@@ -13,6 +13,7 @@ class Locators:
     NEXT_IMAGE_BUTTON = (By.CLASS_NAME, "CircleButton_type_next")
     PREVIOUS_IMAGE_BUTTON = (By.CLASS_NAME, "CircleButton_type_prev")
     CURRENT_IMAGE = (By.CLASS_NAME, "MMImage-Origin")
+    IMAGES_SEARCH_FIELD = (By.NAME, "text")
 
 class MainPage(BasePage):
 
