@@ -11,7 +11,9 @@ class ImagesPage(BasePage):
         elem = self.browser.find_element(*Locators.FIRST_CATEGORY)
         attr_value = elem.get_attribute("data-grid-text")
         elem.click()
-        # assert attr_value in self.browser.find_element(*Locators.SEARCH_FIELD).getAttribute("value"), "Wrong category name"
+        time.sleep(2)
+        attr_value2 = self.browser.find_element(*Locators.IMAGES_SEARCH_FIELD)
+        assert attr_value in attr_value2.get_attribute("value"), "Wrong category name"
 
     def go_to_first_image(self):
         image = self.browser.find_element(*Locators.FIRST_IMAGE)
